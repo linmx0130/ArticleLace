@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ArticleLace</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+      <div class="container">
+          <h1>ArticleLace</h1>
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" id='list-btn-li' class="active"><a href="#" id='list-btn'>List</a></li>
+            <li role="presentation" id='new-article-note-btn-li'><a href="#" id='new-article-note-btn'>New</a></li>
+            <li role="presentation"><a href="#" id='exit-btn'>Exit</a></li>
+          </ul>
+          <div class='articlelace-frame' id='article-list-frame'>
+          </div>
+          <div class='articlelace-frame' id='new-article-note-frame' style='display:none'>
+              <div class="input-group">
+                <span class="input-group-addon glyphicon glyphicon-file"></span>
+                <input type="text" class="form-control" id='new-article-title' placeholder='Title'>
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon glyphicon glyphicon-user"></span>
+                <input type="text" class="form-control" id='new-article-authors' placeholder='Authors'>
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon glyphicon glyphicon-calendar"></span>
+                <input type="text" class="form-control" id='new-article-year' placeholder='Published year'>
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon glyphicon glyphicon-search"></span>
+                <input type="text" class="form-control" id='new-article-keywords' placeholder='Key words'>
+              </div>
+                <textarea class="form-control" id='new-article-abstract' placeholder='Abstract' cols=5></textarea>
+            <input type='button' class="btn btn-success" id='new-article-save' value="Save">
+          </div>
+      </div>
+  </body>
+
+  <script>
+    require('./renderer.js')
+  </script>
+</html>

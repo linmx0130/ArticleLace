@@ -1,0 +1,19 @@
+{
+  "name": "ArticleLace",
+  "version": "0.0.1",
+  "description": "A simple scientific paper notebook.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/linmx0130/ArticleLace",
+  "keywords": [
+    "paper",
+    "note"
+  ],
+  "author": "Mengxiao Lin",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.4.1"
+  }
+}
